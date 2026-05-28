@@ -1,0 +1,42 @@
+{
+  "name": "winer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Co-founder — your voice-first startup partner powered by ElevenLabs Speech Engine",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "speech-engine": "tsx server/speech-engine.mts",
+    "setup:appwrite": "tsx scripts/setup-appwrite.ts",
+    "dev:all": "concurrently \"npm run dev\" \"npm run speech-engine\""
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^1.0.0",
+    "@elevenlabs/react": "^0.0.5",
+    "appwrite": "^16.0.0",
+    "node-appwrite": "^14.0.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "next": "15.1.0",
+    "openai": "^4.77.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
